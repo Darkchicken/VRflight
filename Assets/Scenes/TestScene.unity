@@ -257,6 +257,7 @@ GameObject:
   - 33: {fileID: 1706018783}
   - 23: {fileID: 1706018782}
   - 114: {fileID: 1706018785}
+  - 54: {fileID: 1706018786}
   m_Layer: 0
   m_Name: TestShip
   m_TagString: Untagged
@@ -323,7 +324,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a064f7d1e48e58a4e97aad7f01a6a517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  turnSpeed: 1
+  moveSpeed: 20
+--- !u!54 &1706018786
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1706018781}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2021990320
 GameObject:
   m_ObjectHideFlags: 0
