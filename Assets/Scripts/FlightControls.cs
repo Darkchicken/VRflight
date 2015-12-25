@@ -9,7 +9,7 @@ public class FlightControls : MonoBehaviour {
     public float turnSpeed = 20f;
 
     private Vector3 Move;
-    public GameObject head; 
+    GameObject head; 
 
 
     public float moveSpeed = 10f;
@@ -25,11 +25,11 @@ public class FlightControls : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        transform.Translate(transform.forward * moveSpeed * Time.deltaTime);
+        //this allows the ship to go in the direction you face
+        // transform.Translate(head.transform.forward * moveSpeed * Time.deltaTime);
 
-        
-        transform.Translate(head.transform.forward * moveSpeed * Time.deltaTime);
 
-      
-        
+
     }
 }
