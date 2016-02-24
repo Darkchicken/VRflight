@@ -25,6 +25,12 @@ public class FlightControls : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+/*
+        if(Rotationinarange)
+        {
+            transform.Rotate(Vector3.right * Time.deltaTime);
+        }
+        */
         transform.Translate(transform.forward * moveSpeed * Time.deltaTime);
         //this allows the ship to go in the direction you face
         // transform.Translate(head.transform.forward * moveSpeed * Time.deltaTime);
